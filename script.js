@@ -14,6 +14,7 @@ const sector1 = document.querySelector("#sector-1");
 const tabs = document.querySelectorAll(".links-tab");
 const tabsContainer = document.querySelector(".links-tab-container");
 const tabsContent = document.querySelectorAll(".links-content");
+const allSectors = document.querySelectorAll(".sector");
 
 // Modal window
 const openModal = function (e) {
@@ -107,8 +108,6 @@ const headerObserver = new IntersectionObserver(stickyNav, {
 headerObserver.observe(header);
 
 // Reveal sections
-const allSectors = document.querySelectorAll(".sector");
-
 const revealSector = function (entries, observer) {
   const [entry] = entries;
 
