@@ -107,26 +107,6 @@ const headerObserver = new IntersectionObserver(stickyNav, {
 
 headerObserver.observe(header);
 
-// Reveal sections
-const revealSector = function (entries, observer) {
-  const [entry] = entries;
-
-  if (!entry.isIntersecting) return;
-
-  entry.target.classList.remove("sector-hidden");
-  observer.unobserve(entry.target);
-};
-
-const sectorObserver = new IntersectionObserver(revealSector, {
-  root: null,
-  threshold: 0.25,
-});
-
-allSectors.forEach(function (sector) {
-  sectorObserver.observe(sector);
-  sector.classList.add("sector-hidden");
-});
-
 // Slider
 const slider = function () {
   const slides = document.querySelectorAll(".slide");
