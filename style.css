@@ -36,7 +36,8 @@ body.dark-theme .slider-btn {
 body.dark-theme .modal-header,
 body.dark-theme .sector-header,
 body.dark-theme .details,
-body.dark-theme .about-text {
+body.dark-theme .about-text,
+body.dark-theme h4 {
   color: #eee;
 }
 
@@ -184,13 +185,12 @@ img {
 }
 
 .navbar-icon-mode {
-  height: 3.5rem;
+  height: 4.5rem;
   transition: all 0.3s;
 }
 
 .navbar-logo {
-  height: 7rem;
-  /* width: 200px; */
+  height: 10rem;
 }
 
 .navbar-links {
@@ -198,12 +198,18 @@ img {
   align-items: center;
   list-style: none;
 }
+
 .navbar-item {
-  margin-left: 1rem;
+  margin-left: 8rem;
   position: relative;
   top: 0;
   left: 0;
 }
+
+.navbar-mode {
+  margin-left: 2rem;
+}
+
 .navbar-link:link,
 .navbar-link:visited {
   font-size: 1.7vw;
@@ -581,4 +587,56 @@ h4 {
   cursor: pointer;
   border: none;
   background: none;
+}
+
+@media only screen and (max-width: 768px) {
+  .navbar-item {
+    margin-left: 1rem;
+  }
+
+  .navbar-icon {
+    height: 1.5rem;
+  }
+
+  .navbar-icon-mode {
+    height: 1.5rem;
+  }
+
+  .navbar-logo {
+    height: 6rem;
+  }
+
+  .navbar-link:link,
+  .navbar-link:visited {
+    font-size: 4vw;
+  }
+
+  h1 {
+    font-size: 7.5vw;
+    grid-column: 1 / 3;
+    grid-row: 2 / 3;
+    padding-bottom: 1rem;
+  }
+
+  h4 {
+    font-size: 4.4vw;
+    grid-column: 1 / 3;
+    grid-row: 3 / 4;
+    padding-bottom: 1rem;
+  }
+
+  .header-title {
+    row-gap: 0;
+  }
+
+  .header-img {
+    width: 60%;
+    grid-column: 1 / span 2;
+    grid-row: 1 / 2;
+    place-self: center;
+  }
+
+  .btn-text {
+    font-size: 4vw;
+  }
 }
