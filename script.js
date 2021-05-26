@@ -16,6 +16,8 @@ const tabsContainer = document.querySelector(".links-tab-container");
 const tabsContent = document.querySelectorAll(".links-content");
 const allSectors = document.querySelectorAll(".sector");
 
+document.querySelector("#copy-year").innerHTML = new Date().getFullYear();
+
 // Modal window
 const openModal = function (e) {
   e.preventDefault();
@@ -66,7 +68,7 @@ btnMoreDetails.addEventListener("click", function (e) {
 document.querySelector(".navbar-links").addEventListener("click", function (e) {
   e.preventDefault();
   if (e.target.classList.contains("navbar-link")) {
-    const id = e.target.getAttribute("href"); /// only want that part, no absolute URL
+    const id = e.target.getAttribute("href");
     document.querySelector(id).scrollIntoView({ behavior: "smooth" });
   }
 });
@@ -164,13 +166,10 @@ const slider = function () {
     activateDot(curSlide);
   };
 
-  const init = function () {
-    goToSlide(0);
-    createDots();
-
-    activateDot(0);
-  };
-  init();
+  // init slider
+  goToSlide(0);
+  createDots();
+  activateDot(0);
 
   // Event handlers
   btnRight.addEventListener("click", nextSlide);
@@ -192,10 +191,11 @@ const slider = function () {
 slider();
 
 // Tabbed component
+// Adding an event listener on the container, for performance reasons
 tabsContainer.addEventListener("click", function (e) {
   const clicked = e.target.closest(".links-tab");
 
-  // Guard clause
+  // If a tab is not clicked, return
   if (!clicked) return;
 
   // Remove active classes
