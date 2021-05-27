@@ -345,7 +345,7 @@ h4 {
 
 .dots {
   position: absolute;
-  bottom: 16%;
+  bottom: 7%;
   left: 50%;
   transform: translateX(-50%);
   display: flex;
@@ -677,6 +677,10 @@ h4 {
 
   .about-text {
     font-size: 3.7vw;
+  }
+
+  .dots {
+    bottom: 13%;
   }
 
   .slider-btn {
