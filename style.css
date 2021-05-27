@@ -303,7 +303,7 @@ h4 {
   position: absolute;
   top: 0;
   width: 100%;
-  height: 60rem;
+  height: 65rem;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -345,7 +345,7 @@ h4 {
 
 .dots {
   position: absolute;
-  bottom: 5%;
+  bottom: 16%;
   left: 50%;
   transform: translateX(-50%);
   display: flex;
