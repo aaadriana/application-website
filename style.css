@@ -50,7 +50,7 @@ body.dark-theme .links-tab {
   position: relative;
   top: 0rem;
   left: 0rem;
-  background-image: linear-gradient(to right, #2d67b3, #3d5a80, #98c1d9);
+  /* background-image: linear-gradient(to right, #2d67b3, #3d5a80, #98c1d9); */
 }
 
 .btn-dark-mode:hover,
@@ -63,7 +63,7 @@ body.dark-theme .links-tab {
   position: absolute;
   top: 0rem;
   left: 0rem;
-  display: flex;
+  /* display: flex;
   justify-content: center;
   align-items: center;
   align-content: center;
@@ -75,7 +75,7 @@ body.dark-theme .links-tab {
   transition: 0.5s;
   background-size: 200% auto;
   box-shadow: 0 0 10px #3d5a80;
-  background-image: linear-gradient(to right, #ee6c4d, #ee876d, #e9d1cb);
+  background-image: linear-gradient(to right, #ee6c4d, #ee876d, #e9d1cb); */
 }
 
 .btn-light-mode:hover,
@@ -89,10 +89,10 @@ body.dark-theme .links-tab {
   transition: transform 1s, opacity 1s;
 }
 
-.sector-hidden {
+/* .sector-hidden {
   opacity: 0;
   transform: translateY(8rem);
-}
+} */
 
 .sector-title {
   max-width: 80rem;
@@ -310,11 +310,11 @@ h4 {
   transition: transform 1s;
 }
 
-.slide > img {
+/* .slide > img {
   width: 100%;
   height: 75%;
   object-fit: cover;
-}
+} */
 
 .slider-btn {
   position: absolute;
@@ -556,6 +556,7 @@ h4 {
   visibility: hidden;
   opacity: 0;
 }
+
 .modal {
   position: fixed;
   top: 50%;

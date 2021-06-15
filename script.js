@@ -44,14 +44,15 @@ document.addEventListener("keydown", function (e) {
 const lightMode = function (e) {
   e.preventDefault();
   darkBtn.classList.remove("hidden");
-  lightBtn.classList.add("hidden");
   parent.classList.remove("dark-theme");
+
+  lightBtn.classList.add("hidden");
 };
 
 const darkMode = function (e) {
   e.preventDefault();
-  darkBtn.classList.add("hidden");
   lightBtn.classList.remove("hidden");
+  darkBtn.classList.add("hidden");
   parent.classList.add("dark-theme");
 };
 
@@ -86,6 +87,8 @@ const handleHover = function (e) {
     logo.style.opacity = this;
   }
 };
+
+console.log(handleHover.bind(0.5));
 
 navbar.addEventListener("mouseover", handleHover.bind(0.5));
 navbar.addEventListener("mouseout", handleHover.bind(1));
